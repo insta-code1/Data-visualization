@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="../static/lib/css/keen-dashboards.css">
     <link rel="stylesheet" href="../static/lib/css/dc.css">
     <link rel="stylesheet" href="../static/css/custom.css">
-    <link rel="stylesheet" href="../static/css/introjs.css">
+    <link rel="stylesheet" href="../static/css/introjs.css"/>
+
 
 </head>
+<body>
 <body class="application">
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <button class="intro_button" type="button" autofocus onclick="javascript:introJS().start();">Start Tour!</button>
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-header" href="./">School Donations Dashboard</a>
+            <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
         </div>
     </div>
 </div>
@@ -23,8 +25,8 @@
 <div id="outer" class="container-fluid">
     <div class="row">
 
-        <div class="col-sm-8">
-           <div class="row">
+        <div class="col-sm-8>
+            <div class="row">
 
                     <!--Time Chart-->
                     <div class="col-sm-12">
@@ -33,7 +35,7 @@
                                 Number of Donations
                             </div>
                             <div class="chart-stage">
-                                <div id="time-chart">
+                                <div id="time-chart" data-step="1" data-intro="This chart shows the number of donations over time. We can see a spike in late 2007!" style="font-weight: normal" data-position="right">
                             </div>
                         </div>
                     </div>
@@ -46,7 +48,7 @@
                                 Resources Type
                             </div>
                             <div class="chart-stage">
-                                <div id="resource-type-row-chart"></div>
+                                <div id="resource-type-row-chart" data-step="2" data-intro="Here we have the various project genres and how many donations were made to each" style="font-weight: normal" data-position="right"></div>
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,7 @@
                                 Funding Status
                             </div>
                             <div class="chart-stage">
-                                <div id="funding-chart"></div>
+                                <div id="funding-chart" data-step="3" data-intro="We can see that most projects were completed relative to how many expired" style="font-weight: normal" data-position="right"></div>
                             </div>
                         </div>
                     </div>
@@ -67,18 +69,18 @@
                 </div>
             </div>
 
-            <!-- Poverty -->
+            <!-- Poverty Level-->
             <div class="col-sm-3">
                 <div class="chart-wrapper">
                     <div class="chart-title">
                         Poverty Level
                     </div>
                     <div class="chart-stage">
-                        <div id="poverty-level-row-chart"></div>
+                        <div id="poverty-level-row-chart" data-step="4" data-intro="Finally we can see the distribution of donations for each poverty class" style="font-weight: normal" data-position="right"></div>
                     </div>
                 </div>
             </div>
-            <!-- Poverty -->
+            <!-- Poverty Level-->
 
             <!-- menu select -->
             <div class="col-sm-6">
@@ -106,7 +108,7 @@
                         vertical-align: middle;
                         text-align: center;
                         padding-top: 12px;
-                        padding-bottom: 0;">
+                        padding-bottom: 0px;">
                         <div id="number-projects-nd"></div>
                     </div>
                 </div>
@@ -130,11 +132,10 @@
     </div>
 
 <hr>
-<p class="small text-muted"> Data viz &#9829; from Code Institute</a</p>
+<p class="small text-muted"> Data viz &#9829; from InstaCode</p>
 
 </div>
 
-<script src="../static/js/intro.js"></script>
 <script src="../static/lib/js/jquery.min.js"></script>
 <script src="../static/lib/js/bootstrap.min.js"></script>
 <script src="../static/lib/js/crossfilter.js"></script>
@@ -144,5 +145,7 @@
 
 <script src="../static/lib/js/keen.min.js"></script>
 <script src="../static/js/graph.js"></script>
+<script src="../static/js/intro.js"></script>
+
 </body>
 </html>
