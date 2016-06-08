@@ -7,9 +7,10 @@ app = Flask(__name__)
 
 MONGOD_HOST = 'ds025603.mlab.com'
 MONGOD_PORT = 25603
+
 DBS_NAME = 'heroku_0fwl2k35'
+MONGO_URI = 'mongodb://root:rootpassword@ds025603.mlab.com:25603/heroku_0fwl2k35'
 COLLECTION_NAME = 'projects'
-MONGO_URI = 'mongodb://<dbuser>:<dbpassword>@ds025603.mlab.com:25603/heroku_0fwl2k35'
 FIELDS = {'funding_status': True, 'school_state': True, 'resource_type': True,
           'poverty_level': True, 'date_posted': True, 'total_donations': True, '_id': False}
 
